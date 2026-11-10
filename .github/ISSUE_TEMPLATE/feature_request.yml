@@ -1,0 +1,23 @@
+name: 功能建议
+description: 提出使用体验或功能改进建议
+title: "[Feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 使用场景
+      description: 你希望解决什么具体问题？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 期望的功能
+      description: 描述希望脚本如何工作，以及如何判断该功能满足需求。
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 补充信息
+      description: 可选，提供当前处理方式、相关页面结构或其他说明。

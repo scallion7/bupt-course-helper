@@ -1,0 +1,55 @@
+name: 问题反馈
+description: 报告脚本运行或页面适配问题
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请先查看 README 的常见问题。日志、截图或 HTML 片段请先脱敏，不要提供账号密码、学号、Cookie 或令牌。
+  - type: textarea
+    id: environment
+    attributes:
+      label: 运行环境
+      description: 请填写浏览器、Tampermonkey、脚本版本，以及使用的选课系统。
+      placeholder: |
+        浏览器：Microsoft Edge，版本……
+        Tampermonkey：版本……
+        脚本：版本……
+        选课系统：北邮研究生选课系统
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请描述打开的页面、相关配置和触发问题的操作。
+      placeholder: |
+        1. 打开……
+        2. 将刷新间隔设置为……
+        3. 观察到……
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为
+      description: 例如持续刷新、弹窗未出现、未点击按钮、点击后收到失败提示。
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 控制台日志
+      description: 仅粘贴与问题有关且已脱敏的日志。
+      render: text
+  - type: textarea
+    id: context
+    attributes:
+      label: 补充信息
+      description: 可选，提供脱敏截图或相关课程行、弹窗的 HTML 片段。
